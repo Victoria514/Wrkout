@@ -19,13 +19,20 @@ var previousToDoTVC = MondayToDoTableViewController()
     
 
     @IBAction func mondayAddButtonTapped(_ sender: UIButton) {
-        let newToDo = ToDoClass()
+        guard let accessToCoreData = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let dataFromCoreData = accessToCoreData.persistentContainer.viewContext
+        
+        let newToDo = MondayToDoCD(context: dataFromCoreData)
         
         if let checkForInput = descriptionInput.text {
-            newToDo.description = checkForInput
+            newToDo.descriptionInCD = checkForInput
         }
-        previousToDoTVC.listOfToDo.append(newToDo)
-        previousToDoTVC.tableView.reloadData()
+        newToDo.descriptionInCD = descriptionInput.text
+        accessToCoreData.saveContext()
+//        previousToDoTVC.listOfToDo.append(newToDo)
+//        previousToDoTVC.tableView.reloadData()
         
         navigationController?.popViewController(animated: true)
     }

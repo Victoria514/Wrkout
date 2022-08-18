@@ -17,6 +17,10 @@
 		BD1C8E7D28ABE76F003CFD83 /* Wrkout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD1C8E7B28ABE76F003CFD83 /* Wrkout.xcdatamodeld */; };
 		BD1C8E7F28ABE770003CFD83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1C8E7E28ABE770003CFD83 /* Assets.xcassets */; };
 		BD1C8E8228ABE770003CFD83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1C8E8028ABE770003CFD83 /* LaunchScreen.storyboard */; };
+		BD3CECB728AEAF2500F24521 /* nameChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3CECB628AEAF2500F24521 /* nameChanger.swift */; };
+		BD3CECB928AEBA6C00F24521 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3CECB828AEBA6C00F24521 /* HomeViewController.swift */; };
+		BD3CECBB28AEC89C00F24521 /* waterTrackerChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3CECBA28AEC89C00F24521 /* waterTrackerChanger.swift */; };
+		BD3CECBD28AECA9A00F24521 /* WaterTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3CECBC28AECA9A00F24521 /* WaterTrackerViewController.swift */; };
 		BD6E6C9D28AC348D0080E02F /* MondayCompletedToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E6C9C28AC348D0080E02F /* MondayCompletedToDoViewController.swift */; };
 		BDA351C828AD703A00F632CC /* ViewControllerCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA351C728AD703A00F632CC /* ViewControllerCalendar.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +38,10 @@
 		BD1C8E7E28ABE770003CFD83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD1C8E8128ABE770003CFD83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD1C8E8328ABE770003CFD83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD3CECB628AEAF2500F24521 /* nameChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameChanger.swift; sourceTree = "<group>"; };
+		BD3CECB828AEBA6C00F24521 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BD3CECBA28AEC89C00F24521 /* waterTrackerChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waterTrackerChanger.swift; sourceTree = "<group>"; };
+		BD3CECBC28AECA9A00F24521 /* WaterTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackerViewController.swift; sourceTree = "<group>"; };
 		BD6E6C9C28AC348D0080E02F /* MondayCompletedToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondayCompletedToDoViewController.swift; sourceTree = "<group>"; };
 		BDA351C728AD703A00F632CC /* ViewControllerCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCalendar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +80,10 @@
 				BD1C8E7428ABE76F003CFD83 /* SceneDelegate.swift */,
 				BD1C8E7628ABE76F003CFD83 /* ViewController.swift */,
 				BD1C8E7828ABE76F003CFD83 /* Main.storyboard */,
+				BD3CECBC28AECA9A00F24521 /* WaterTrackerViewController.swift */,
+				BD3CECBA28AEC89C00F24521 /* waterTrackerChanger.swift */,
+				BD3CECB828AEBA6C00F24521 /* HomeViewController.swift */,
+				BD3CECB628AEAF2500F24521 /* nameChanger.swift */,
 				BDA351C728AD703A00F632CC /* ViewControllerCalendar.swift */,
 				BD6E6C9C28AC348D0080E02F /* MondayCompletedToDoViewController.swift */,
 				BD061E8128AC23940003FEAB /* MondayAddToDoViewController.swift */,
@@ -157,14 +169,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD1C8E7728ABE76F003CFD83 /* ViewController.swift in Sources */,
+				BD3CECB728AEAF2500F24521 /* nameChanger.swift in Sources */,
 				BD1C8E7328ABE76F003CFD83 /* AppDelegate.swift in Sources */,
 				BD061E8228AC23940003FEAB /* MondayAddToDoViewController.swift in Sources */,
 				BD1C8E7528ABE76F003CFD83 /* SceneDelegate.swift in Sources */,
 				BD6E6C9D28AC348D0080E02F /* MondayCompletedToDoViewController.swift in Sources */,
+				BD3CECBD28AECA9A00F24521 /* WaterTrackerViewController.swift in Sources */,
 				BD061E7E28AC1A750003FEAB /* MondayToDoTableViewController.swift in Sources */,
+				BD3CECB928AEBA6C00F24521 /* HomeViewController.swift in Sources */,
 				BD1C8E7D28ABE76F003CFD83 /* Wrkout.xcdatamodeld in Sources */,
 				BDA351C828AD703A00F632CC /* ViewControllerCalendar.swift in Sources */,
 				BD061E8028AC1AEB0003FEAB /* MondayToDo.swift in Sources */,
+				BD3CECBB28AEC89C00F24521 /* waterTrackerChanger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
